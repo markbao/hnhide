@@ -1,0 +1,17 @@
+{
+  "name": "Hacker News Hide",
+  "version": "1.0",
+  "description": "Hide stories on Hacker News.",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "permissions": [
+    "http://news.ycombinator.com/"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://news.ycombinator.com/*"],
+      "js": ["jquery.min.js","logic.js"]
+    }
+  ]
+}
